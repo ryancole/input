@@ -1,2 +1,2 @@
-export { Input } from "./component/Input";
-export { InputGroup } from "./component/InputGroup";
+export { default as Input } from "./component/Input";
+export { default as InputGroup } from "./component/InputGroup";
