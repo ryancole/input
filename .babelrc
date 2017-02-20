@@ -1,0 +1,5 @@
+{
+  "ignore": ["lib"],
+  "presets": ["latest", "react", "stage-2"],
+  "plugins": ["transform-flow-strip-types"]
+}
