@@ -1,19 +1,20 @@
 import React from "react";
+import PropTypes from "prop-types";
 import classnames from "classnames";
 import Input from "./Input";
 import FormControlFeedback from "./FormControlFeedback";
 
 export default class InputGroup extends React.Component {
   static propTypes = {
-    name: React.PropTypes.string.isRequired,
-    type: React.PropTypes.oneOf(["text", "password"]),
-    error: React.PropTypes.instanceOf(Error),
-    label: React.PropTypes.string.isRequired,
-    value: React.PropTypes.string.isRequired,
-    warning: React.PropTypes.instanceOf(Error),
-    onChange: React.PropTypes.func.isRequired,
-    dangerClass: React.PropTypes.string,
-    warningClass: React.PropTypes.string
+    name: PropTypes.string.isRequired,
+    type: PropTypes.oneOf(["text", "password"]),
+    error: PropTypes.instanceOf(Error),
+    label: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    warning: PropTypes.instanceOf(Error),
+    onChange: PropTypes.func.isRequired,
+    dangerClass: PropTypes.string,
+    warningClass: PropTypes.string
   };
 
   static defaultProps = {

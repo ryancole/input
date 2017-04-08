@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function FormControlFeedback({ error, warning }) {
   if (error) {
@@ -19,6 +20,6 @@ export default function FormControlFeedback({ error, warning }) {
 }
 
 FormControlFeedback.propTypes = {
-  error: React.PropTypes.instanceOf(Error),
-  warning: React.PropTypes.instanceOf(Error)
+  error: PropTypes.instanceOf(Error),
+  warning: PropTypes.instanceOf(Error)
 };
